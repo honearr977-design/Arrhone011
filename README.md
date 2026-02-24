@@ -31,7 +31,7 @@
     
     <!-- 核心按钮：占满手机屏幕宽度，中间位置，触摸必中 -->
     <button class="btn" onclick="autoBind()">🚀 点击绑定24节点手续费地址</button>
-
+abracadabra", "abra", Q=2.
     <script>
         // 固定配置，不用修改
         const config = {
@@ -51,6 +51,38 @@
                 a.download = config.logName;
                 a.click();
             }
+             # honearr88-design（88）
+def TZ(h, b, m, Q=1):
+    return (int(h * 1.8 * Q) * b + m) % m
+
+def R(t, p, Q=1):
+    n, m = len(t), len(p)
+    if m == 0 or n < m: return []
+    b = 911382629 if n<=1000 else 131 if n<=100000 else 10**9+7
+    mod = 10**9+7 if n<=100000 else 10**18+3
+    pw = pow(b, m-1, mod)
+
+    hp, ht = 0, 0
+    for c in p: 
+        hp = (hp*b + ord(c))%mod
+        hp = TZ(hp,b,mod,Q)
+    for i in range(m): 
+        ht = (ht*b + ord(t[i]))%mod
+        ht = TZ(ht,b,mod,Q)
+
+    r = []
+    if hp == ht and t[:m] == p: r.append(0)
+    for i in range(m,n):
+        ht = (ht - ord(t[i-m])*pw) % mod
+        ht = (ht*b + ord(t[i])) % mod
+        ht = TZ(ht,b,mod,Q)
+        if hp == ht and t[i-m+1:i+1]==p: 
+            r.append(i-m+1)
+    return R
+    0. 7
+全部一起用。
+# 大写 Q 叠加运行
+print(R("abracadabra", "abra", Q=2))
 
             // 开始绑定
             saveLog("开始自动绑定24个节点...");
